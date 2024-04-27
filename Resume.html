@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="Resume.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="Resume.js"></script>
+   <script>
+    document.addEventListener("DOMContentLoaded",function(event){
+  let circle=document.querySelectorAll('.circle');
+  circle.forEach(function(progress){
+      let degree=0;
+      var targetDegree=parseInt(progress.getAttribute('data-degree'));
+      let color=progress.getAttribute('data-color');
+      let number=progress.querySelector('.number');
+      var interval=setInterval(function(){
+          degree+=1;
+          if(degree>targetDegree){
+              clearInterval(interval);
+              return;
+          }
+          progress.style.background=`conic-gradient(${color} ${degree}%  ,#222 0%)`;
+          number.innerHTML=degree+'<span>%</span>';
+          number.style.color=color;
+
+      },50)
+  })
+});
+   </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home"style="--i:1" class="active">Home</a>
+            <a href="#about"style="--i:2">About</a>
+            <a href="#skills"style="--i:3">Skill</a>
+            <a href="#services"style="--i:4">Portfolio</a>
+            <a href="#contact"style="--i:5">Contact</a>
+            <i class="fa-solid fa-circle-xmark"></i>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <section class="home" id="'home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Sanjana Mutkiri</h1>
+            <h3>And I'm a CSE Student</h3>
+            <h3>And I'm a <span class="text">CSE Student</span></h3>
+           
+            <p>I'm a Web Designer <br>expertise is to create and website design ,Frontend design , and many more....</p>
+            <div class="home-sci">
+                <a href="https://www.instagram.com/sanjana_mutkiri_0610?igsh=eTR5MWV6MTR1NDdq"style="--i:7"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.hackerrank.com/profile/sanjanamutkiri"style="--i:8"><i class='bx bx-code'></i></a>
+                <a href="https://www.linkedin.com/in/sanjana-mutkiri-711681259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"style="--i:9"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://github.com/sanjanamutkiri"style="--i:10"><i class='bx bxl-github' ></i></a>
+            </div>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Frontend Designer</h4>
+            <p>Enthusiastic second-year Computer Science Engineering student with a passion for technology and a drive to innovate. 
+                Proficient in programming languages such as Java, Python, and C++, with a keen interest in exploring new technologies and frameworks. 
+                Eager to leverage academic knowledge and practical experience to contribute to meaningful projects and gain valuable industry insights.
+                 Strong problem-solving skills, excellent teamwork abilities, and a commitment to continuous learning. 
+                 Aspiring to build a successful career in software development and make a positive impact in the ever-evolving tech landscape.
+                 Highly skilled Front End Developer and Coder with extensive programming knowledge.
+                 Proficient in creating user-friendly interfaces and implementing interactive features to enhance user experience. 
+                 Experienced in HTML, CSS, JavaScript, and various front end frameworks. 
+                 Strong problem-solving abilities and a passion for staying updated with the latest technologies and trends in web development.</p>
+                 
+        </div>
+    </section>
+
+
+
+
+
+    
+
+
+    <h1 class="sub-title"><span>Technical </span>Skills</h1>
+    <div class="container1" id="skills">
+        
+
+        <div class="circle" data-degree="95" data-color="#f7418f">
+            <h2 class="number">95<span>%</span></h2>
+            <h4>HTML</h4>
+        </div>
+
+        <div class="circle" data-degree="80" data-color="#04fc43">
+            <h2 class="number">80<span>%</span></h2>
+            <h4>CSS</h4>
+        </div>
+
+         <div class="circle" data-degree="60" data-color="#fee800">
+            <h2 class="number">60<span>%</span></h2>
+            <h4>JAVA</h4>
+        </div>
+
+        <div class="circle" data-degree="85" data-color="#c76114">
+            <h2 class="number">85<span>%</span></h2>
+            <h4>CPP</h4>
+        </div>
+        
+    </div>
+    <br><br>
+    
+   <section>
+    <div class="skills">
+        <h1 class="sub-title"><span>Professional </span>Skills</h1>
+     
+       <li><h3>Communication</h3>
+    <span class="bar"><span class="html"></span></span></li>
+
+    <li><h3>Creativity</h3>
+        <span class="bar"><span class="css"></span></span></li>
+
+        <li><h3>Teamwork</h3>
+            <span class="bar"><span class="js"></span></span></li>
+
+            <li><h3>Leadership</h3>
+                <span class="bar"><span class="cpp"></span></span></li>
+
+                <li><h3>Project Management</h3>
+                    <span class="bar"><span class="java"></span></span></li>
+              
+    </div>
+   
+    
+   </section>
+
+
+
+
+    <section>
+   <div class="services" id="services">
+    <div class="container">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bxs-graduation'></i>
+                <h2>Education</h2>
+                  <p><h3>College</h3>Walchand Institute of Technology,Solapur
+                2026's CSE student</p> 
+                <p><h3>Intermediate Education</h3>Walchand College of Arts and Science,solapur(2020-2022)</p>  
+                <p><h3>Schooling</h3>Shree Siddheshwar Girl's High School,Solapur(2014-2020)</p>           
+                
+            </div>
+            <div>
+                <i class="bx bx-crop" style="color: aqua;"></i>
+                <h2>Experience</h2>
+                <p>Currently Student eager to embark on a career and gain practical experience . Motivated and adaptable with strong willingness to learn and contribute 
+                    to orgnizational goals.
+                </p>
+                
+            </div>
+            <div>
+                <i class="bx bxl-apple" style="color: aqua;"></i>
+                <h2>Projects</h2>
+                <p>
+                        <p>Tic-Toe-Game</p>
+                        <p>Landing Page</p>
+                        <p>Amazon-clone</p>
+                  
+            </p>
+              
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+
+
+
+<section class="contact" id="contact">
+    <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's Work Together</h4>
+        <p>Have a question or suggestion? Feel free to reach out ! Whether its about collaborating on project ,sharing feedback, or just saying Hello </p>
+       <p><h4>Address : </h4>521 Sakhar peth, Solapur 413005 Maharashtra</p>
+        <div class="contact-list">
+            <li><i class="bx bxs-send"></i>sanjanamutkiri@gmail.com</li>
+            <li><i class="bx bxs-phone"></i>8793881120</li>
+        </div>
+        <a href="file:///C:/Users/smutk/Downloads/Professional%20Modern%20CV%20Resume.pdf" class="btn-box">Download CV</a>
+
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/sanjana_mutkiri_0610?igsh=eTR5MWV6MTR1NDdq"style="--i:7"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.hackerrank.com/profile/sanjanamutkiri"style="--i:8"><i class='bx bx-code'></i></a>
+            <a href="https://www.linkedin.com/in/sanjana-mutkiri-711681259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"style="--i:9"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://github.com/sanjanamutkiri"style="--i:10"><i class='bx bxl-github' ></i></a>
+        </div>
+
+    </div>
+
+    <div class="contact-form">
+        <form action="post" name="submit-to-google-sheet">
+            <input type="text" name="Name"placeholder="Enter Name" required>
+            <input type="email" name="Email" placeholder="Enter Email" required>
+            <input type="text" name="Subject" placeholder="Enter Your Subject">
+            <textarea name="Message" id="" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
+            <input type="submit" value="submit" class="send">
+        </form>
+    </div>
+</section>
+
+<div class="last-text">
+    <p>Developed  <i class='bx bx-copyright'></i> made with <i class='bx bxs-heart' style="color: #C51104;"></i> by Sanjana Mutkiri</p>
+    
+
+</div>
+<a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+</body>
+</html>
