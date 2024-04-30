@@ -51,17 +51,20 @@ body {
     color: #0ef;
 }
 .home {
-    position: relative;
+    
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
-    background: url("Untitled design.png") no-repeat; /* Update the background image path */
-    background-size: cover; /* Adjusted background size */
+    height: auto;
+     min-height: 100vh;
+    background: url("Untitled design (4).png") no-repeat;
+    background-size: cover; /* Set background size to cover */
     background-position: center;
     display: flex;
     align-items: center;
     padding: 5% 5% 0;
+   
 }
+
 
 .about {
     display: grid;
@@ -277,7 +280,7 @@ section{
     box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
 
-.skills h3 {
+.skills h1 {
     margin: 2% 0; /* Adjusted margin for responsiveness */
     font-size: 3vw; /* Adjusted font size for responsiveness */
 }
