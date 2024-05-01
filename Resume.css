@@ -51,20 +51,24 @@ body {
     color: #0ef;
 }
 .home {
-    
-    width: 100%;
-    justify-content: space-between;
-    height: auto;
-     min-height: 100vh;
-    background: url("Untitled design (4).png") no-repeat;
-    background-size: cover; /* Set background size to cover */
-    background-position: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 5% 5% 0;
-   
+    gap: 1.5rem;
+    background: url("Untitled design.png") no-repeat; /* Update the background image path */
+    background-size: cover; /* Adjusted background size */
+    background-position: center; 
+    background-color: #001b29;
+    justify-content: space-between;
 }
-
+.home-img img {
+    padding-bottom: 10%; /* Adjusted padding */
+    max-width: 90vw; /* Adjusted max-width */
+    height: auto;
+    width: 100%;
+    border-radius: 2vw; /* Adjusted border-radius */
+    background-color: #001b29;
+}
 
 .about {
     display: grid;
@@ -75,7 +79,13 @@ body {
     background-size: cover; /* Adjusted background size */
     background-position: center;
 }
-
+.about-img img {
+    padding-bottom: 10%; /* Adjusted padding */
+    max-width: 90vw; /* Adjusted max-width */
+    height: auto;
+    width: 100%;
+    border-radius: 2vw; /* Adjusted border-radius */
+}
 
 .home-content {
     max-width: 90%; /* Adjusted maximum width */
@@ -159,13 +169,7 @@ body {
     box-shadow: 0 0 0.25vw cyan, 0 0 1.25vw cyan, 0 0 2.5vw cyan, 0 0 5vw cyan, 0 0 10vw cyan; /* Adjusted box-shadow */
 }
 
-.about-img img {
-    padding-bottom: 10%; /* Adjusted padding */
-    max-width: 90vw; /* Adjusted max-width */
-    height: auto;
-    width: 100%;
-    border-radius: 2vw; /* Adjusted border-radius */
-}
+
 
 .about-text h2 {
     font-size: 6vw; /* Adjusted font size */
@@ -314,13 +318,9 @@ section{
 }
 
 .container1 {
-    position: relative;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5%; /* Adjusted gap for responsiveness */
-    margin: 5%; /* Adjusted margin for responsiveness */
 }
 
 .container1 .circle {
